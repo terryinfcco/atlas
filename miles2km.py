@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+# from tkinter import ttk
 import ttkbootstrap as ttk
 
 
@@ -12,7 +12,7 @@ def convert():
 
 
 # Create main window
-window = tk.Tk()
+window = ttk.Window(themename='darkly')
 # Put a title on the window
 window.title("Demo")
 # Set geometry of window - width then height in pixels
@@ -21,7 +21,7 @@ window.geometry("300x150")
 # Needs the container and some text at a minimum
 # Font is optional but commonly used for styling
 title_label = ttk.Label(
-    master=window, text="Miles to kilometers", font="Calibri 24 bold"
+    master=window, text="Miles to kilometers", font="Cantarell 24 bold"
 )
 # Has to be placed on the window somehow - pack is the simplest
 title_label.pack()
